@@ -25,8 +25,8 @@ go to `credentials.yml` file in the directory and ensure the following value is 
 
 ```
 rest:
-#  # you don't need to provide anything here - this channel doesn't
-#  # require any credentials
+  # you don't need to provide anything here - this channel doesn't
+  # require any credentials
 ```
 
 start the rasa server with following command
