@@ -7,11 +7,9 @@ You can refer the [rasa documentation](https://rasa.com/docs/rasa/user-guide/ins
 
 This implementation isn't a recommended set up for production, but just to illustrate the capabilities of the platform. Please build on top of this ideas discussed to have in running in production.
 
-## Steps to get the integration up and running
-
 Follow the given steps to get your agent bot integration up and running
 
-### Get a rasa project up and running. 
+## Get a rasa project up and running. 
 
 Go to a new directory and create a rasa project. If you have rasa installed in your machine you can get it up and running by follow in commands.  Refer [docs](https://rasa.com/docs/rasa/user-guide/rasa-tutorial/) to get the installation up and running. 
 
@@ -35,7 +33,7 @@ start the rasa server with following command
  rasa run -m models --enable-api --log-file out.log
 ```
 
-###  Get your chatwoot up and create an agent bot
+##  Get your chatwoot up and create an agent bot
 
 go to your chatwoot directory and ensure your local server is running.  Start a rails console in your directory.
 
@@ -56,7 +54,7 @@ Connect Agent Bot to your inbox by running the following command
 AgentBotInbox.create!(inbox: Inbox.first, agent_bot: bot)
 ```
 
-### Clone this repo into your machine and run the rasa router script. 
+## Clone this repo into your machine and run the rasa router script. 
 
 clone repo using the following command. 
 
@@ -79,7 +77,7 @@ cd rasa-router
 php -S localhost:8000
 ```
 
-### Try connecting to your chatwoot webwidget and start a conversation. 
+## Connect to your chatwoot webwidget and start a conversation. 
 
 if you are on your local machine, you can access the widget through the test page
 
