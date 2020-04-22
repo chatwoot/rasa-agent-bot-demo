@@ -1,5 +1,5 @@
 
-# Rasa Agent Bot Demo 
+# Chatwoot Agent Bot Demo using Rasa
 
 This is a sample implementation of agent bot capabilities in chatwoot using [rasa](https://rasa.com/) . Rasa Open Source is a machine learning framework to automate text- and voice-based assistants.
 
