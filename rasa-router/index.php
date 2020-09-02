@@ -7,11 +7,16 @@ $chatwoot_url = 'http://localhost:3000';
 $chatwoot_bot_token = '<your agent bot token>';
 
 
-$message_type = $_REQUEST["message_type"];
-$message = $_REQUEST["content"];
-$conversation = $_REQUEST["conversation"]["display_id"];
-$contact = $_REQUEST["contact"]["id"];
-$account = $_REQUEST["account"]["id"];
+$json = file_get_contents('php://input');
+error_log("request payload: #{$json}", 0);
+
+$data = json_decode($json);
+
+$message_type = $data->message_type;
+$message = $data->content;
+$conversation = $data->conversation->id;
+$contact = $data->contact->id;
+$account = $data->account->id;
 
 
 error_log("message_type: {$message_type}", 0);
@@ -65,6 +70,7 @@ function send_to_chatwoot($account, $conversation, $message){
 
   $context  = stream_context_create( $options );
   $result = file_get_contents( $url, false, $context );
+  error_log("chatwoot response: {$result}",0);
   $response = json_decode($result);
   return $result;
 }
