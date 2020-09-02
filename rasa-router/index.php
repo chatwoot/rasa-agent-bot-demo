@@ -15,12 +15,15 @@ $data = json_decode($json);
 $message_type = $data->message_type;
 $message = $data->content;
 $conversation = $data->conversation->id;
-$contact = $data->contact->id;
+$contact = $data->sender->id;
 $account = $data->account->id;
 
 
 error_log("message_type: {$message_type}", 0);
-
+error_log("message: {$message}", 0);
+error_log("conversation: {$conversation}", 0);
+error_log("contact: {$contact}", 0);
+error_log("account: {$account}", 0);
  
 if($message_type == "incoming")
 {  
