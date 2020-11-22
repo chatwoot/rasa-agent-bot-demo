@@ -19,13 +19,6 @@ cd rasa
 rasa init --no-prompt
 ```
 
-go to `credentials.yml` file in the directory and ensure the following value is set. This is to ensure we can communicate with rasa through rest api
-
-```
-rest:
-  # you don't need to provide anything here - this channel doesn't
-  # require any credentials
-```
 
 start the rasa server with following command
 
