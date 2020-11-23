@@ -7,7 +7,12 @@ You can refer the [rasa documentation](https://rasa.com/docs/rasa/user-guide/ins
 
 This implementation isn't a recommended set up for production, but just to illustrate the capabilities of the platform. Please build on top of this ideas discussed to have in running in production.
 
-Follow the given steps to get your agent bot integration up and running
+
+
+Follow the given steps to get your agent bot integration up and running. 
+
+**Refer the [Video Walkthrough](https://youtube.com/watch?v=KE4nKgepO_k) and [blog post](https://www.chatwoot.com/blog/its-a-bot-story)**
+
 
 ## Get a rasa project up and running. 
 
