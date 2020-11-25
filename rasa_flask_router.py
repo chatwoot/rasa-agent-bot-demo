@@ -36,8 +36,8 @@ from flask import Flask, request
 app = Flask(__name__)
 
 
-@app.route('/rasa',methods=['POST'])
-def hello():
+@app.route('/rasa', methods=['POST'])
+def rasa():
     data = request.get_json()
     message_type = data['message_type']
     message = data['content']
@@ -48,8 +48,8 @@ def hello():
     if(message_type == "incoming"):
         bot_response = send_to_bot(contact, message)
         create_message = send_to_chatwoot(
-            account, conversation, bot_response.text)
-
+            account, conversation, bot_response)
+    return create_message
 
 if __name__ == '__main__':
     app.run(debug=1)
