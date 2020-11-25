@@ -36,7 +36,7 @@ from flask import Flask, request
 app = Flask(__name__)
 
 
-@app.route('/rasa')
+@app.route('/rasa',methods=['POST'])
 def hello():
     data = request.get_json()
     message_type = data['message_type']
