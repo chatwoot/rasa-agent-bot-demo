@@ -61,12 +61,20 @@ AgentBotInbox.create!(inbox: Inbox.first, agent_bot: bot)
 
 ## Clone this repo into your machine and run the rasa router script. 
 
+
 clone repo using the following command. 
 
 ```
 git clone git@github.com:chatwoot/rasa-agent-bot-demo.git
 ```
+## Using Python
+open up the python file in your editor and change the follow values with appropriate ones. 
 
+rasa_url, chatwoot_url and chatwoot_bot_token.
+
+Then run `pip install -r requirements.txt` and `python3 -m gunicorn --workers=1 test:app -b 0.0.0.0 `
+
+## Using PHP:
 open up the `rasa-router/index.php` file in your editor and change the follow values with appropriate ones. 
 
 ```
