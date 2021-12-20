@@ -1,6 +1,8 @@
 
 # Chatwoot Agent Bot Demo using Rasa
 
+> You should be running this demo on a local installation of Chatwoot and a non dockerised setup for the `localhost` and `ports` to be accessible for all the services involved. If you are intending to run in a remote server, ensure you change the localhost urls with appropriate IP addresses and make sure the ports should be accessible for all the services involded. 
+
 This is a sample implementation of agent bot capabilities in chatwoot using [rasa](https://rasa.com/) . Rasa Open Source is a machine learning framework to automate text- and voice-based assistants.
 
 You can refer the [rasa documentation](https://rasa.com/docs/rasa/user-guide/installation/) to get it up and running in your machine. 
