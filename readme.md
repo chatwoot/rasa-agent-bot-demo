@@ -1,3 +1,10 @@
+# Archiving the Repo 
+
+Moving this to [Chatwoot Implementation Samples](https://github.com/chatwoot/implementation-examples).
+
+-----
+
+
 
 # Chatwoot Agent Bot Demo using Rasa
 
